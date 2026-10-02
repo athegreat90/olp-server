@@ -1,0 +1,13 @@
+services:
+  olp-server:
+    build: .
+    image: olp-server:local
+    container_name: olp-server
+    restart: unless-stopped
+    ports:
+      - "445:445"
+    volumes:
+      - ./games:/games
+    environment:
+      - PUID=1000
+      - PGID=1000

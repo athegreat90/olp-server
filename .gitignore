@@ -1,0 +1,5 @@
+games/
+*.iso
+*.bin
+*.cue
+.DS_Store
